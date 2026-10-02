@@ -2,7 +2,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "image-compressing-service-r2-mongodb",
   "main": "src/index.ts",
-  "compatibility_date": "2026-10-02"
+  "compatibility_date": "2026-10-02",
   // "compatibility_flags": [
   //   "nodejs_compat"
   // ],
@@ -15,12 +15,12 @@
   //     "id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
   //   }
   // ],
-  // "r2_buckets": [
-  //   {
-  //     "binding": "MY_BUCKET",
-  //     "bucket_name": "my-bucket"
-  //   }
-  // ],
+  "r2_buckets": [
+    {
+      "binding": "BUCKET",
+      "bucket_name": "shishir-nitm-prod"
+    }
+  ],
   // "d1_databases": [
   //   {
   //     "binding": "MY_DB",
